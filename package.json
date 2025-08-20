@@ -1,0 +1,37 @@
+{
+  "name": "snake-app",
+  "version": "1.0.0",
+  "description": "A modern, responsive Snake game built with HTML5, CSS3, and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "start index.html",
+    "dev": "python -m http.server 8000",
+    "serve": "npx http-server -p 8000"
+  },
+  "keywords": [
+    "snake",
+    "game",
+    "html5",
+    "canvas",
+    "javascript",
+    "css3",
+    "responsive",
+    "mobile-friendly"
+  ],
+  "author": "Snake App Developer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/snake-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/snake-app/issues"
+  },
+  "homepage": "https://github.com/yourusername/snake-app#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake App - Classic Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="game-header">
+            <h1 class="game-title">🐍 Snake App</h1>
+            <div class="game-stats">
+                <div class="stat">
+                    <span class="stat-label">Score:</span>
+                    <span class="stat-value" id="score">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">High Score:</span>
+                    <span class="stat-value" id="highScore">0</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="game-area">
+            <canvas id="gameCanvas" width="600" height="400"></canvas>
+            
+            <div class="game-controls">
+                <button id="startBtn" class="btn btn-primary">Start Game</button>
+                <button id="pauseBtn" class="btn btn-secondary" disabled>Pause</button>
+                <button id="resetBtn" class="btn btn-danger">Reset</button>
+            </div>
+
+            <div class="instructions">
+                <h3>How to Play:</h3>
+                <p>Use <strong>Arrow Keys</strong> or <strong>WASD</strong> to control the snake</p>
+                <p>Eat the food to grow and increase your score</p>
+                <p>Avoid hitting the walls or yourself!</p>
+            </div>
+        </main>
+
+        <div id="gameOverModal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Game Over!</h2>
+                <p>Final Score: <span id="finalScore">0</span></p>
+                <p>High Score: <span id="modalHighScore">0</span></p>
+                <button id="playAgainBtn" class="btn btn-primary">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
